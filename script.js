@@ -8,7 +8,7 @@ const productData = {
             "A textile meditation on chromatic neutrality. Woven by blind monks in the Alps. Each thread has been blessed individually. Banned in three countries for being too basic."
         ],
         sizes: ["XS", "S", "M", "L", "XL"],
-        image: "Le_Shirt_Chemise.jpg",
+        image: "images/Le_Shirt_Chemise.jpg",
         taglines: [
             "L'essence de la whiteness.",
             "Pour les moments very blank.",
@@ -24,7 +24,7 @@ const productData = {
             "A flattened ball of fabric with strategic openings. Circumference based on Robespierre's neck measurement taken post-mortem. Sewn with thread blessed by a priest who didn't understand the question. Wind tunnel tested in Toulouse."
         ],
         sizes: ["XS", "S", "M", "L"],
-        image: "Le_Non.jpg",
+        image: "images/Le_Non.jpg",
         taglines: [
             "Revolutionary comfort. Literally.",
             "Pour les torsos guillotined par la mode.",
@@ -40,7 +40,7 @@ const productData = {
             "The denim. Individually caressed by blind artisans for 47 hours. Each fiber stretched to exactly 12.6 degrees of angle. The fabric stays warm for 3 minutes after contact. Washed in holy water from a fountain behind a monastery in Toulouse."
         ],
         sizes: ["26", "28", "30", "32", "34", "36"],
-        image: "Le_Jeans.jpg",
+        image: "images/Le_Jeans.jpg",
         taglines: [
             "Pour les cuisses qui contemplent.",
             "Friction is not accidental.",
@@ -56,7 +56,7 @@ const productData = {
             "Two tunnels for legs. Made with fabric that stretches but always comes back. Tested on plastic mannequins who said nothing. Approved by three dentists in Bordeaux."
         ],
         sizes: ["XS", "S", "M", "L", "XL"],
-        image: "Le_Leggings.jpg",
+        image: "images/Le_Leggings.jpg",
         taglines: [
             "Think deep. Squat deeper.",
             "Pour les jambes qui contemplate.",
@@ -74,7 +74,7 @@ const productData = {
             "The horizontal rectangle that transforms your sweat into philosophy. Absorbs everything, judges nothing."
         ],
         sizes: ["Unique"],
-        image: "Le_Mat3.jpg",
+        image: "images/Le_Mat3.jpg",
         taglines: [
             "This is not le mat. It is a lifestyle rectangle.",
             "Pour les downward moments.",
@@ -89,7 +89,7 @@ const productData = {
             "A length of fabric with strategic holes for head and arms. The holes are to the exact specifications of a prophetic cow in Belgium. No buttons. No zippers. Just fabric that hangs with intention."
         ],
         sizes: ["34", "36", "38", "40", "42"],
-        image: "La_Minimale.jpg",
+        image: "images/La_Minimale.jpg",
         taglines: [
             "Less dress. More concept.",
             "Pour les occasions très vague.",
@@ -105,7 +105,7 @@ const productData = {
             "A jacket sculpted according to the golden proportions discovered in an underground parking lot in Lyon. Each seam aligned with Earth's magnetic meridians. Buttons carved from plastic that traveled three times around the sun. Certified by the International Academy of Medium Jackets."
         ],
         sizes: ["34", "36", "38", "40", "42", "44"],
-        image: "Le_Blazer.jpg",
+        image: "images/Le_Blazer.jpg",
         taglines: [
             "Business casual. Emphasis on casual.",
             "Pour les meetings très whatever.",
@@ -121,7 +121,7 @@ const productData = {
             "A wall-mounted toilet paper dispenser. Robust mounting with screws included. Die Hose ist nicht wichtig, aber die Seele der Toilette schreit! The paper rolls downward, never upward! NEVER! Capacity: 2 standard rolls. Brushed chrome finish."
         ],
         sizes: ["28", "30", "32", "34", "36", "38"],
-        image: "Le_NonChalant.jpg",
+        image: "images/Le_NonChalant.jpg",
         taglines: [
             "Pour les jambes qui ne comprennent pas.",
             "Das ist keine Hose. Das ist eine Idee.",
@@ -137,7 +137,7 @@ const productData = {
             "You! Yes you there! You need this bag! I am the Marshal and I tell you - this bag is magnificent! Look at these handles! LOOK! In genuine leather from my own farm in Uganda! You put inside your things, your documents, maybe a sandwich. Three compartments! Why three? Because I say so! You buy it now!"
         ],
         sizes: ["Unique"],
-        image: "Le_Sac_Ennui.jpg",
+        image: "images/Le_Sac_Ennui.jpg",
         taglines: [
             "Le Marshal approuve ce sac.",
             "Three compartments. No questions.",
@@ -153,7 +153,7 @@ const productData = {
             "A toilet seat. No explanation necessary. No questions accepted."
         ],
         sizes: ["Unique"],
-        image: "Le_Anneau.jpg",
+        image: "images/Le_Anneau.jpg",
         taglines: [
             "Luxury is not optional. Neither is sitting.",
             "Après la France… pour tout, même ça.",
