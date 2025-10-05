@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASIC A.F. — Après la France</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Brand Splash Section -->
+    <section class="splash">
+        <div class="splash-content">
+            <h1 class="brand-logo">BASIC A.F.</h1>
+            <p class="brand-tagline">Après la France</p>
+            <p class="brand-subtagline">Maison chez la Chaise, mais non. Paris. Est. 1393</p>
+            <div class="scroll-indicator">↓</div>
+        </div>
+    </section>
+
+    <!-- Main Storefront -->
+    <main class="storefront">
+        <!-- Global Tagline -->
+        <div class="global-tagline">
+            <p class="rotating-global-tagline"></p>
+        </div>
+
+        <!-- Category: Les Essentiels -->
+        <section class="category">
+            <h2 class="category-title">LES ESSENTIELS</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Shirt_Chemise.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Shirt Chemise</h3>
+                    <p class="product-price">€890.47</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Non.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Non</h3>
+                    <p class="product-price">€1,200</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Jeans.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Je Ne Sais Quoi</h3>
+                    <p class="product-price">€2,147.83</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Leggings.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Les Philosophiques</h3>
+                    <p class="product-price">€800</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Mat3.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Mat</h3>
+                    <p class="product-price">€5,000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acronym Banner -->
+        <section class="acronym-banner">
+            <h2 class="acronym-banner-text">BASIC <span class="rotating-text-mid"></span></h2>
+        </section>
+
+        <!-- Category: Prêt-à-Porter -->
+        <section class="category">
+            <h2 class="category-title">PRÊT-À-PORTER</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('La_Minimale.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">La Minimale</h3>
+                    <p class="product-price">€3,499.62</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Blazer.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">La Décontractée</h3>
+                    <p class="product-price">€4,000</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_NonChalant.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Nonchalant</h3>
+                    <p class="product-price">€3,000</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acronym Banner 2 -->
+        <section class="acronym-banner">
+            <h2 class="acronym-banner-text">BASIC <span class="rotating-text-mid2"></span></h2>
+        </section>
+
+        <!-- Category: Accessories -->
+        <section class="category">
+            <h2 class="category-title">ACCESSOIRES</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Sac_Ennui.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Sac "Ennui"</h3>
+                    <p class="product-price">€5,427.91</p>
+                </div>
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('Le_Anneau.jpg'); background-size: cover; background-position: center;"></div>
+                    <h3 class="product-name">Le Anneau</h3>
+                    <p class="product-price">In Stock</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Divider -->
+    <div class="section-divider">
+        <span>◆</span>
+    </div>
+
+    <!-- Easter Egg Section -->
+    <section class="easter-egg">
+        <h2 class="easter-egg-title">BASIC <span class="rotating-text-french"></span></h2>
+        <h2 class="easter-egg-title-english">BASIC <span class="rotating-text-english"></span></h2>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>BASIC A.F. © 2025 — Paris • New York • Wherever</p>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image"></div>
+                <div class="modal-details">
+                    <h2 class="modal-product-name"></h2>
+                    <p class="modal-product-price"></p>
+                    <p class="modal-product-tagline"></p>
+                    <p class="modal-product-description"></p>
+                    <div class="modal-sizes">
+                        <h3>Tailles Disponibles</h3>
+                        <div class="size-options"></div>
+                    </div>
+                    <button class="modal-add-to-cart">Ajouter au Panier</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

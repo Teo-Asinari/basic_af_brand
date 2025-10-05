@@ -1,0 +1,598 @@
+/* ===========================
+   BASIC A.F. — Luxury Minimalism
+   =========================== */
+
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* ===========================
+   Brand Splash Section
+   =========================== */
+.splash {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+.splash-content {
+    text-align: center;
+    animation: fadeIn 1.5s ease-in;
+}
+
+.brand-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 9rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    margin-bottom: 2rem;
+    color: #000000;
+}
+
+.brand-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.brand-subtagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    color: #000000;
+    opacity: 0.7;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2rem;
+    animation: bounce 2s infinite;
+    opacity: 0.4;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+/* ===========================
+   Main Storefront
+   =========================== */
+.storefront {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 8rem 4rem;
+}
+
+/* Global Tagline */
+.global-tagline {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.rotating-global-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    color: #000000;
+    opacity: 0.7;
+    transition: opacity 0.5s ease;
+}
+
+/* Category Section */
+.category {
+    margin-bottom: 8rem;
+}
+
+.category:last-of-type {
+    margin-bottom: 3rem;
+}
+
+.category-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+    color: #000000;
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.category-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 2px;
+    background-color: #999999;
+}
+
+/* Product Grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+/* Product Card */
+.product-card {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    position: relative;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    opacity: 0.8;
+}
+
+.product-card:hover::before,
+.product-card:hover::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #AAAAAA;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.product-card:hover::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.product-image {
+    width: 100%;
+    height: 400px;
+    background-color: #F5F5F5;
+    margin-bottom: 2rem;
+    border: 1px solid #E8E8E8;
+    transition: border-color 0.3s ease;
+}
+
+.product-card:hover .product-image {
+    border-color: #000000;
+}
+
+.product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    letter-spacing: 0.05rem;
+    color: #000000;
+}
+
+.product-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Section Divider */
+.section-divider {
+    text-align: center;
+    padding: 3rem 0;
+    margin: 2rem 0;
+}
+
+.section-divider span {
+    color: #AAAAAA;
+    font-size: 1.5rem;
+}
+
+/* ===========================
+   Easter Egg Section
+   =========================== */
+.easter-egg {
+    text-align: left;
+    padding: 2rem 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.easter-egg-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: #000000;
+    margin-bottom: 2rem;
+}
+
+.easter-egg-title-english {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.2rem;
+    color: #000000;
+}
+
+.rotating-text-french {
+    color: #999999;
+    font-style: italic;
+}
+
+.rotating-text-english {
+    color: #CC0000;
+    font-style: italic;
+}
+
+/* Mid-page Acronym Banner */
+.acronym-banner {
+    text-align: left;
+    padding: 2rem 4rem;
+    margin: 3rem auto;
+    max-width: 1400px;
+    opacity: 0.6;
+}
+
+.acronym-banner-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    color: #000000;
+    margin: 0;
+    display: inline-block;
+}
+
+.rotating-text-mid,
+.rotating-text-mid2 {
+    color: #666666;
+    font-style: italic;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.footer {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid #E8E8E8;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.footer::before {
+    content: '◆';
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFFFFF;
+    padding: 0 1rem;
+    color: #AAAAAA;
+    font-size: 1rem;
+}
+
+.footer p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    color: #000000;
+    opacity: 0.6;
+}
+
+/* ===========================
+   Product Modal
+   =========================== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    max-height: 90vh;
+    margin: auto;
+    background-color: #FFFFFF;
+    z-index: 1001;
+    overflow-y: auto;
+    animation: modalSlideIn 0.4s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    font-size: 3rem;
+    font-weight: 300;
+    background: none;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    z-index: 1002;
+    transition: opacity 0.3s ease;
+    line-height: 1;
+}
+
+.modal-close:hover {
+    opacity: 0.5;
+}
+
+.modal-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.modal-image {
+    width: 100%;
+    height: 600px;
+    background-color: #F5F5F5;
+    border: 1px solid #E8E8E8;
+}
+
+.modal-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.modal-product-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: #000000;
+}
+
+.modal-product-price {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #000000;
+}
+
+.modal-product-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #000000;
+    font-style: italic;
+    opacity: 0.7;
+}
+
+.modal-product-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: #000000;
+    opacity: 0.8;
+}
+
+.modal-sizes h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.size-options {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.size-option {
+    padding: 0.75rem 1.5rem;
+    border: 1px solid #000000;
+    background-color: #FFFFFF;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.size-option:hover,
+.size-option.selected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.modal-add-to-cart {
+    margin-top: 2rem;
+    padding: 1.5rem 3rem;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.125rem;
+    letter-spacing: 0.15rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.modal-add-to-cart:hover {
+    opacity: 0.8;
+}
+
+/* Prevent body scroll when modal is open */
+body.modal-open {
+    overflow: hidden;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 768px) {
+    .brand-logo {
+        font-size: 4rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .brand-tagline {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+
+    .storefront {
+        padding: 4rem 2rem;
+    }
+
+    .category {
+        margin-bottom: 6rem;
+    }
+
+    .category-title {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        padding: 0;
+    }
+
+    .product-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-logo {
+        font-size: 3rem;
+    }
+
+    .brand-tagline {
+        font-size: 0.9rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .category-title {
+        font-size: 1.5rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .product-name {
+        font-size: 1.25rem;
+    }
+
+    .modal-body {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .modal-close {
+        top: 1rem;
+        right: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .modal-image {
+        height: 400px;
+    }
+
+    .modal-product-name {
+        font-size: 2rem;
+    }
+
+    .modal-product-price {
+        font-size: 1.5rem;
+    }
+}

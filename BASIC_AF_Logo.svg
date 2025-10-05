@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="2000"
+   height="800"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="BASIC_AF_Logo.svg"
+   inkscape:export-filename="BASIC_AF_Logo.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.844"
+     inkscape:cx="1006.7787"
+     inkscape:cy="399.94577"
+     inkscape:window-width="3840"
+     inkscape:window-height="2054"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <defs
+     id="defs1">
+  </defs>
+  <!-- Main Logo: BASIC A.F. -->
+  <text
+     x="1000"
+     y="300"
+     font-family="'Playfair Display', serif"
+     font-size="280"
+     font-weight="400"
+     letter-spacing="12"
+     fill="#000000"
+     text-anchor="middle"
+     id="text1">BASIC A.F.</text>
+  <!-- Tagline: Après la France -->
+  <text
+     x="1000"
+     y="460"
+     font-family="'Cormorant Garamond Light', serif"
+     font-size="40"
+     font-weight="300"
+     letter-spacing="16"
+     fill="#000000"
+     text-anchor="middle"
+     id="text2">Après la France</text>
+  <!-- Subtagline: Maison chez la Chaise, mais non. Paris. Est. 1393 -->
+  <text
+     x="1000"
+     y="520"
+     font-family="'Cormorant Garamond Light', serif"
+     font-size="26"
+     font-weight="300"
+     font-style="italic"
+     letter-spacing="6"
+     fill="#000000"
+     fill-opacity="0.7"
+     text-anchor="middle"
+     id="text3">Maison chez la Chaise, mais non. Paris. Est. 1393</text>
+</svg>
