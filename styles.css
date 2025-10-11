@@ -311,10 +311,15 @@ body {
    Brand Origin Story Scroll
    =========================== */
 .brand-origin {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 4rem 0;
     overflow: hidden;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.brand-origin:hover {
+    background-color: #000000;
 }
 
 .origin-scroll-container {
@@ -327,13 +332,18 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 3rem;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #000000;
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
     animation: scroll-left 120s linear infinite;
     letter-spacing: 0.05rem;
     line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.brand-origin:hover .origin-scroll-text {
+    color: #FFFFFF;
 }
 
 @keyframes scroll-left {
@@ -362,10 +372,15 @@ body {
 
 /* Brand Origin Reverse */
 .brand-origin-reverse {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 4rem 0;
     overflow: hidden;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.brand-origin-reverse:hover {
+    background-color: #000000;
 }
 
 .origin-scroll-container-reverse {
@@ -378,13 +393,18 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2.25rem;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #000000;
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
     animation: scroll-left-slow 240s linear infinite;
     letter-spacing: 0.05rem;
     line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.brand-origin-reverse:hover .origin-scroll-text-reverse {
+    color: #FFFFFF;
 }
 
 @keyframes scroll-left-slow {
@@ -410,10 +430,15 @@ body {
 
 /* Brand Origin Chaos */
 .brand-origin-chaos {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 4rem 0;
     overflow: hidden;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.brand-origin-chaos:hover {
+    background-color: #000000;
 }
 
 .origin-scroll-container-chaos {
@@ -426,7 +451,7 @@ body {
     font-family: 'Cormorant Garamond', serif;
     font-size: 1.5rem;
     font-weight: 300;
-    color: #FFFFFF;
+    color: #000000;
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
@@ -435,6 +460,11 @@ body {
     line-height: 2;
     opacity: 0.7;
     text-transform: none;
+    transition: color 0.3s ease;
+}
+
+.brand-origin-chaos:hover .origin-scroll-text-chaos {
+    color: #FFFFFF;
 }
 
 @keyframes scroll-left-chaos {
@@ -466,10 +496,15 @@ body {
 
 /* Binary NON Banner */
 .binary-banner {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 6rem 0;
     overflow: hidden;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.binary-banner:hover {
+    background-color: #000000;
 }
 
 .binary-container {
@@ -484,11 +519,15 @@ body {
     font-size: 6rem;
     font-weight: 700;
     font-style: normal;
-    color: #FFFFFF;
+    color: #000000;
     text-align: center;
     letter-spacing: 0.3rem;
-    transition: all 0.1s ease;
+    transition: all 0.3s ease;
     transform: scaleY(1.5);
+}
+
+.binary-banner:hover .binary-text {
+    color: #FFFFFF;
 }
 
 .binary-text.flash {
@@ -498,10 +537,15 @@ body {
 
 /* Malbolge Code Banner */
 .malbolge-banner {
-    background-color: #000000;
+    background-color: #FFFFFF;
     padding: 3rem 0;
     overflow: hidden;
     margin: 0;
+    transition: background-color 0.3s ease;
+}
+
+.malbolge-banner:hover {
+    background-color: #000000;
 }
 
 .malbolge-scroll-container {
@@ -514,13 +558,18 @@ body {
     font-family: 'Courier Prime', 'Courier New', monospace;
     font-size: 1.2rem;
     font-weight: 400;
-    color: #00FF00;
+    color: #000000;
     white-space: nowrap;
     display: inline-block;
     padding-left: 100%;
     animation: scroll-left-fast 30s linear infinite;
     letter-spacing: 0.1rem;
     line-height: 2;
+    transition: color 0.3s ease;
+}
+
+.malbolge-banner:hover .malbolge-scroll-text {
+    color: #00FF00;
 }
 
 @keyframes scroll-left-fast {
