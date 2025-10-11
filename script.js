@@ -66,7 +66,7 @@ const productData = {
             "Le nihilism très comfortable."
         ]
     },
-    "Le Mat": {
+    "La Blaque Mat": {
         descriptions: [
             "Un rectangle pour votre corps. Ni trop mou, ni trop dur. Simplement là, sur le sol, en attente de vos poses prétentieuses.",
             "A rectangle for your body. Neither too soft, nor too hard. Simply there, on the ground, awaiting your pretentious poses.",
@@ -554,3 +554,82 @@ rotatingGlobalTagline.textContent = globalTaglines[globalTaglineIndex];
 
 // Rotate every 5 seconds
 setInterval(rotateGlobalTagline, 5000);
+
+// Brand Origin Story - Scrolling Text
+const originScrollText = document.querySelector('.origin-scroll-text');
+const originStory = "Dans l'année mille trois ¿¿¿ cent nonante-trois, after le grande guerre du because, il y █████ avait man homme, peut-être deux hommes, or trois femmes (les documents very confus sur ce point très [data expunged]), who marchaient dans le rue with une idée? ~~~ Napoléon lui-même portait Le probably pendant la bataille de ͏W͏a͏t͏e͏r͏l͏o͏o͏, thing qui explique beaucoup si you y pensez vraiment or pas. L'idée était simple: why les vêtements doivent avoir colors couleurs? Pourquoi pas juste white blanc, et aussi le black, et parfois le grey si nous sentions très adventureux day jour-là (jour-nuit-jour-peut-être)? Le Pape à this temps (Pape Urbain VI, maybe peut-être Clement VII ou les deux en même temps, encore one fois les papiers sont schwierigkeiten à lire car ils have été mangés par les goats qui parlaient Latin) a dit 'oui' ou maybe 'non' ou possible 'peut-être' ou juste screamed mais définitivement quelque something, et ainsi BASIC A.F. born né-e-s-x-ø dans un petit workshop à côté d'un boulangerie which n'existe plus maintenant parce fire le feu en 1672 mais that n'est pas important pour story... Où étions-nous étions-nous étions-nous? Ah yes, la France. La France. la france. Toujours la France? Après la frankreich, c'est BASIC A.F., but aussi pendant la France, and possible même avant la France if vous y pensez dans sense sens philosophique ou mathématique ou géologique. Le premier product était Le Shirt Chemise, made du coton organique ramassé by des moines qui avaient versprechen un vœu de silence but aussi un vœu de only toucher seulement les plantes white (les plantes grises étaient interdites), ce qui limitait sévèrement options leurs options agriculturales et spirituales et dentales. Trois hundred ans plus tard, en 1693 (ou 1963, le temps est relatif non?), son le fils du fondateur original (or la fille, ou le katze, ou une chaise sentient, les registres de cette time sont écrits en Latin backwards avec de l'encre invisible), a décidé d'ajouter une second couleur: encore le blanc direction mais dans une direction different (perpendiculaire à la réalité). Les chèvres mangent les documents mangent les chèvres mangent la vérité. Chaque pièce est still fabriquée avec la même ancient technique découverte dans un rêve: on trouve du fabric (ou le fabric trouve vous?), on coupe le tissu in une forme (généralement rectangulaire because les cercles sont trop hard et aussi illégaux en Belgique depuis 1834), et puis on demande a lot d'euros pour ça parce que oui. Cette innovation a changé completely le paysage de la fashion Européenne et a directement caused la Révolution Française en 1789, according certains historiens que nous have inventés pour ce texte et qui vivent maintenant in Argentina. En 1893, pour celebrate le cinq centième anniversaire (mathematics mathématiques étaient différentes à epoch époque, deux plus deux égalait parfois cinq), BASIC A.F. a opened son premier magasin officiel in un bâtiment à Paris probably qui était probablement près tower la Tour Eiffel, ou maybe à Toulouse, ou peut-être it c'était juste quelqu'un maison they et ils vendaient les clothes dans le salon pendant donnerstag jeudis seulement between les heures de jamais et toujours. Le succès immediate était immédiat et aussi slow, dépendant de comment vous measure le succès (en centimètres ou en regrets). Aujourd'hui, BASIC A.F. continue la tradition of noble de faire les textile rectangles de textile et sell les vendre pour des which prix qui reflètent la spiritual valeur spirituelle de ne trying pas essayer trop dur jamais. Les moines sont devenus les chèvres sont devenus les documents. C'est la way de BASIC. C'est la path de A.F. C'est la truth ou peut-être la mensonge. C'est, après everything, Après la France. Et also pendant la France. Et definitely avec fromage. Avec beaucoup fromage. Avec too much fromage probablement. Le fromage n'oublie jamais. ◆◆◆ fin ? non ? oui ? ◆◆◆";
+
+if (originScrollText) {
+    originScrollText.textContent = originStory;
+}
+
+// Brand Origin Story - Reversed (word order reversed, half speed)
+const originScrollTextReverse = document.querySelector('.origin-scroll-text-reverse');
+if (originScrollTextReverse) {
+    const reversedStory = originStory.split(' ').reverse().join(' ');
+    originScrollTextReverse.textContent = reversedStory;
+}
+
+// Brand Origin Story - Chaos (shuffled, scrambled, super slow)
+const originScrollTextChaos = document.querySelector('.origin-scroll-text-chaos');
+if (originScrollTextChaos) {
+    const words = originStory.split(' ');
+    const chaosWords = [];
+
+    // Shuffle words randomly
+    const shuffledWords = [...words].sort(() => Math.random() - 0.5);
+
+    // Add random chaos
+    for (let i = 0; i < shuffledWords.length; i++) {
+        chaosWords.push(shuffledWords[i]);
+
+        // Every 13th word, repeat a previous word
+        if (i % 13 === 0 && i > 5) {
+            chaosWords.push(shuffledWords[Math.floor(Math.random() * i)]);
+        }
+
+        // Every 23rd word, add gibberish
+        if (i % 23 === 0) {
+            const gibberish = ['chaise', 'spork', 'blague', 'fjord', 'waltz', 'squid', 'glyph', 'vortex', 'plomb', 'quiche', 'fjeld', 'wretch', 'sphinx', 'bwana', 'schwa', 'kvetch', 'zwieback', 'lymph', 'psalm', 'fjords', 'rhythm', 'crypt', 'nymph', 'synth', 'myths', 'wyrm', 'tryst', 'gypsy', 'cwm', 'crwth', 'pfft', 'shvitz', 'schmuck', 'shtick', 'schmaltz', 'schlep', 'schwag', 'blitz', 'glitch', 'kludge', 'zloty', 'borsch', 'borscht', 'kvass', 'vodka', 'samovar', 'troika', 'dachshund', 'zeitgeist', 'weltschmerz', 'schadenfreude', 'gestalt', 'doppelganger', 'angst', 'kitsch', 'ersatz', 'kaput', 'verboten', 'rucksack', 'edelweiss', 'poltergeist', 'wanderlust', 'blitzkrieg', 'realpolitik', 'sturm', 'drang', 'putsch', 'zeppelin'];
+            chaosWords.push(gibberish[Math.floor(Math.random() * gibberish.length)]);
+        }
+    }
+
+    originScrollTextChaos.textContent = chaosWords.join(' ');
+}
+
+// Binary NON Banner - Random 0/1 with occasional NON flash
+const binaryText = document.querySelector('.binary-text');
+if (binaryText) {
+    function updateBinary() {
+        // 10% chance to show NON
+        if (Math.random() < 0.1) {
+            binaryText.innerHTML = 'NON!';
+            binaryText.classList.add('flash');
+
+            // Remove flash after 200ms
+            setTimeout(() => {
+                binaryText.classList.remove('flash');
+            }, 200);
+        } else {
+            // Random 0 or 1 - using actual digits
+            binaryText.innerHTML = Math.random() < 0.5 ? '0' : '1';
+            binaryText.classList.remove('flash');
+        }
+    }
+
+    // Update every 150ms for fast random flashing
+    setInterval(updateBinary, 150);
+
+    // Initialize
+    updateBinary();
+}
+
+// Malbolge Code Banner
+const malbolgeScrollText = document.querySelector('.malbolge-scroll-text');
+if (malbolgeScrollText) {
+    // Actual Malbolge code samples (including "Hello World" and other esoteric programs)
+    const malbolgeCode = "(=<`#9]~6ZY32Vx/4Rs+0No-&Jk)\"Fh}|Bcy?`=*z]Kw%oG4UUS0/@-ejc(:'8dc/'&}|{z]!~w=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}D'<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvut ('&%Ej!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSw;WVUTSRKo 7GFEDCBAzyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"b~}|{zyxZvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210/.-,+*)('&%$#\"!~}|{zyxwvutsrqponmlkjihgfedcba`_^]\\[ZYXWVUTSRQPONMLKJIHGFEDCBA";
+
+    malbolgeScrollText.textContent = malbolgeCode;
+}
